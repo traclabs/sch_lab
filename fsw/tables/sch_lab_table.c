@@ -30,7 +30,6 @@
 #include "ci_lab_msgids.h"
 #include "to_lab_msgids.h"
 
-// #include "sample_app_msgids.h"
 // #include "ros_app_msgids.h"
 #include "robot_sim_msgids.h"
 
@@ -59,8 +58,6 @@ SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.Config = {
                                                  {CFE_SB_MSGID_WRAP_VALUE(CFE_TBL_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(CI_LAB_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(TO_LAB_SEND_HK_MID), 4},
-                                                 // {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_SEND_HK_MID), 4},
-                                                 // {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_CMD_MID), 4},
                                                  // {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_SEND_HK_MID), 4},
                                                  // {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_CMD_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_SEND_HK_MID), 4},
