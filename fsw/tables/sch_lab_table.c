@@ -1,24 +1,20 @@
-/*
-**
-**      GSC-18128-1, "Core Flight Executive Version 6.6"
-**
-**      Copyright (c) 2006-2019 United States Government as represented by
-**      the Administrator of the National Aeronautics and Space Administration.
-**      All Rights Reserved.
-**
-**      Licensed under the Apache License, Version 2.0 (the "License");
-**      you may not use this file except in compliance with the License.
-**      You may obtain a copy of the License at
-**
-**        http://www.apache.org/licenses/LICENSE-2.0
-**
-**      Unless required by applicable law or agreed to in writing, software
-**      distributed under the License is distributed on an "AS IS" BASIS,
-**      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-**      See the License for the specific language governing permissions and
-**      limitations under the License.
-**
-*/
+/************************************************************************
+ * NASA Docket No. GSC-18,719-1, and identified as “core Flight System: Bootes”
+ *
+ * Copyright (c) 2020 United States Government as represented by the
+ * Administrator of the National Aeronautics and Space Administration.
+ * All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License. You may obtain
+ * a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ************************************************************************/
 
 #include "cfe_tbl_filedef.h" /* Required to obtain the CFE_TBL_FILEDEF macro definition */
 #include "sch_lab_table.h"
@@ -63,12 +59,12 @@ SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.Config = {
                                                  {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_CMD_MID), 4},
 #if 0
-                {CFE_SB_MSGID_WRAP_VALUE(SC_SEND_HK_MID),       4},
-                {CFE_SB_MSGID_WRAP_VALUE(SC_1HZ_WAKEUP_MID),    1},  /* Example of a 1hz packet */
-                {CFE_SB_MSGID_WRAP_VALUE(HS_SEND_HK_MID),       0},  /* Example of a message that wouldn't be sent */
-                {CFE_SB_MSGID_WRAP_VALUE(FM_SEND_HK_MID),       4},
-                {CFE_SB_MSGID_WRAP_VALUE(DS_SEND_HK_MID),       4},
-                {CFE_SB_MSGID_WRAP_VALUE(LC_SEND_HK_MID),       4},
+                {CFE_SB_MSGID_WRAP_VALUE(SC_SEND_HK_MID),       4, 0},
+                {CFE_SB_MSGID_WRAP_VALUE(SC_1HZ_WAKEUP_MID),    1, 0},  /* Example of a 1hz packet */
+                {CFE_SB_MSGID_WRAP_VALUE(HS_SEND_HK_MID),       0, 0},  /* Example of a message that wouldn't be sent */
+                {CFE_SB_MSGID_WRAP_VALUE(FM_SEND_HK_MID),       4, 0},
+                {CFE_SB_MSGID_WRAP_VALUE(DS_SEND_HK_MID),       4, 0},
+                {CFE_SB_MSGID_WRAP_VALUE(LC_SEND_HK_MID),       4, 0},
 #endif
                                              }};
 
