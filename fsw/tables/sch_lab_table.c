@@ -48,7 +48,7 @@
 */
 
 SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.Config = {
-                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_SEND_HK_MID), 4},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_SEND_HK_MID), 1},
                                                  {CFE_SB_MSGID_WRAP_VALUE(CFE_EVS_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(CFE_TIME_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(CFE_SB_SEND_HK_MID), 4},
@@ -60,8 +60,7 @@ SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.Config = {
                                                  {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_CMD_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_HK_TLM_MID), 4},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_CMD_MID), 4},
-
+                                                 {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_SEND_HK_MID), 4},                                                                          
 #if 0
                 {CFE_SB_MSGID_WRAP_VALUE(SC_SEND_HK_MID),       4, 0},
                 {CFE_SB_MSGID_WRAP_VALUE(SC_1HZ_WAKEUP_MID),    1, 0},  /* Example of a 1hz packet */
