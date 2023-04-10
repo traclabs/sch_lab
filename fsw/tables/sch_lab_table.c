@@ -49,22 +49,22 @@
 **  3. If the table grows too big, increase SCH_LAB_MAX_SCHEDULE_ENTRIES
 */
 
-SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.TickRate = 10000,
+SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.TickRate = 100,
                                              .Config = {
-                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_EVS_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_TIME_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_SB_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_TBL_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(CI_LAB_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(TO_LAB_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_SEND_HK_MID), 400},
-                                                 //{CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_CMD_MID), 400},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_EVS_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_TIME_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_SB_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(CFE_TBL_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(CI_LAB_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(TO_LAB_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_SEND_HK_MID), 100},
+                                                 //{CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_CMD_MID), 100},
                                                  {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_SEND_HK_MID), 50},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_CMD_MID), 400},
-                                                 // {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_HK_TLM_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_SEND_HK_MID), 400},
-                                                 {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_HR_WAKEUP_HK_MID), 20},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(ROS_APP_CMD_MID), 100},
+                                                 // {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_HK_TLM_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_SEND_HK_MID), 100},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(ROBOT_SIM_HR_CONTROL_MID), 10},
                                                  // {CFE_SB_MSGID_WRAP_VALUE(SBN_CMD_MID), 100, SBN_SCH_WAKEUP_CC },
                                                  
 #if 0
